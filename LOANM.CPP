@@ -1,3 +1,5 @@
+/* This file contains the main code */
+
 #include<iostream.h> 
 #include<fstream.h>
 #include<stdio.h>
@@ -976,26 +978,26 @@ if(found==0)
 void drawdoublelinebox(int x,int y,int len,int bdt)
 {
 	gotoxy(x,y);
-	cprintf("É");
+	cprintf("Ã‰");
 		gotoxy(x,y+bdt);
-	cprintf("È");
+	cprintf("Ãˆ");
 	gotoxy(x+len,y);
-	cprintf("»");
+	cprintf("Â»");
 	gotoxy(x+len,y+bdt);
-	cprintf("¼");
+	cprintf("Â¼");
 	for(int i=x+1;i<x+len;i++)
 	{
 		gotoxy(i,y);
-		cprintf("Í");
+		cprintf("Ã");
 		gotoxy(i,y+bdt);
-		cprintf("Í");
+		cprintf("Ã");
 	}
 	for(int j=y+1;j<y+bdt;j++)
 	{
 		gotoxy(x,j);
-		cprintf("º");
+		cprintf("Âº");
 		gotoxy(x+len,j);
-		cprintf("º");
+		cprintf("Âº");
 			}
 }
 
@@ -1004,27 +1006,27 @@ void drawdoublelinebox(int x,int y,int len,int bdt)
 void drawsinglelinebox(int x,int y,int len,int bdt)
 {                                            // (x,y) : co.ord. of 1st tip
 	gotoxy(x,y);                         // len : length of box
-	cprintf("Ú");                        // bdt : breadth of box
+	cprintf("Ãš");                        // bdt : breadth of box
 	gotoxy(x,y+bdt);
-	cprintf("À");
+	cprintf("Ã€");
 	gotoxy(x+len,y);
-	cprintf("¿");
+	cprintf("Â¿");
 	gotoxy(x+len,y+bdt);
-	cprintf("Ù");
+	cprintf("Ã™");
 
 	for(int i=x+1;i<x+len;i++)
 	{
 		gotoxy(i,y);
-		cprintf("Ä");
+		cprintf("Ã„");
 		gotoxy(i,y+bdt);
-		cprintf("Ä");
+		cprintf("Ã„");
 	}
 	for(int j=y+1;j<y+bdt;j++)
 	{
 		gotoxy(x,j);
-		cprintf("³");
+		cprintf("Â³");
 		gotoxy(x+len,j);
-		cprintf("³");
+		cprintf("Â³");
 	}
 }
 void normal()  // to obtain normal background
@@ -1046,18 +1048,18 @@ void screen()
      cprintf("        LOAN MANAGEMENT      ");
      gotoxy(24,4);
      textcolor(15);
-     cprintf(" ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ");
+     cprintf(" ÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃ ");
      drawdoublelinebox(17,7,44,14);
      gotoxy(28,7);
      textbackground(RED);
 	 textcolor(YELLOW);
-	 cprintf("Û  M A I N    M E N U Û" );
+	 cprintf("Ã›  M A I N    M E N U Ã›" );
      normal();
      textcolor(15);
      gotoxy(g,h++);
-     cout<<"	     þ LOAN RECORD";
+     cout<<"	     Ã¾ LOAN RECORD";
      gotoxy(g,h++);
-     cout<<"	     þ QUIT";
+     cout<<"	     Ã¾ QUIT";
      gotoxy(g,h++);
      gotoxy(g,h++);
      gotoxy(g,h++);
@@ -1094,14 +1096,14 @@ do
 	      textcolor(YELLOW);
 	      cprintf("        LOAN RECORDS       ");
 	      gotoxy(25,4);
-	      cprintf(" ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ");
+	      cprintf(" ÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃ ");
 	      int z=19,q=10;
 	      textcolor(YELLOW);
 	      drawdoublelinebox(17,7,44,14);
 	      gotoxy(28,7);
 	      textbackground(RED);
 	      textcolor(YELLOW);
-	      cprintf("Û  M A I N    M E N U Û" );
+	      cprintf("Ã›  M A I N    M E N U Ã›" );
 	      normal();
 	      textcolor(WHITE);
 	      gotoxy(z,q++);
